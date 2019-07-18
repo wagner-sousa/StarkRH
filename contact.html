@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+          <meta charset="utf-8"/>
+          <meta lang="pt-br"/>
+          <title>Stark - Contato</title>
+          <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+     </head>
+
+     <body>
+          <nav class="navbar navbar-expand-md navbar-light">
+               <div class="container">
+                    <a class="navbar-brand" href="#"><img height="100" src="img/logo.png"/></a>
+                    <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarsExample08" aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarsExample08">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
+                         <ul class="navbar-nav justify-content-around w-75">
+                              <li class="nav-item active">
+                                   <a class="nav-link" href="index.html">Página Inicial</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="about.html">Quem Somos</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle" id="dropdown08" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Serviços</a>
+                                   <div class="dropdown-menu" aria-labelledby="dropdown08">
+                                        <a class="dropdown-item" href="business.html">Para Sua Empresa</a>
+                                        <a class="dropdown-item" href="you.html">Para Você</a>
+                                   </div>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="contact.html">Contato</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+
+          <div class="container py-5">
+
+               <div class="row  justify-content-center">
+
+                    <form class="needs-validation w-50" novalidate="" name="form1" method="post" action="email.php">
+                         <div class="mb-3">
+                              <label for="name" class="small">Nome</label>
+                              <input class="form-control" id="name" required="" type="text" placeholder="" value="" name="nome">
+                              <div class="invalid-feedback">
+                                   Preencha o nome
+                              </div>
+                         </div>
+
+                         <div class="mb-3">
+                              <label for="email" class="small">Email</label>
+                              <input class="form-control" id="email" required="" type="email" name="email" placeholder="">
+                              <div class="invalid-feedback">
+                                   Utilize um email válido
+                              </div>
+                         </div>
+
+                         <div class="mb-3">
+                              <label for="city" class="small">Cidade</label>
+                              <input class="form-control" required="" id="city" type="text" name="cidade" placeholder="">
+                         </div>
+                         <div class="mb-3">
+                              <label for="phone" class="small">Telefone</label>
+                              <input class="form-control" required="" id="phone" type="tel" placeholder="" name="telefone">
+                         </div>
+                         <div class="mb-3">
+                              <label for="theme" class="small">Assunto</label>
+                              <input class="form-control" required="" id="theme" type="text" placeholder="" name="assunto">
+                         </div>
+                         <div class="mb-3">
+                              <label for="msg" class="small">Mensagem</label>
+                              <textarea class="form-control" required="" id="msg" rows="5" placeholder="" name="mensagem"></textarea>
+                         </div>
+                         <button class="btn btn-outline-secondary btn-block" type="submit">Enviar Mensagem</button>
+                    </form>
+               </div>
+
+          </div>
+
+          <footer class="jumbotron m-0">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-4 ">
+                              <div class="logo-part">
+                                   <img height="100" src="img/logo.png"/>
+                                   <p class="d-none">7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                                   <p>Soluções para seus processos de Gestão de pessoas. Tenha ao seu lado um especialista!</p>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <h5>Contato</h5>
+                              <dl class="contact-list d-none">
+                                   <dt>Address:</dt>
+                                   <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                              </dl>
+                              <dl class="contact-list">
+                                   <dt>Email:</dt>
+                                   <dd><a href="mailto:#">nadine@starkrh.com.br</a></dd>
+                              </dl>
+                              <dl class="contact-list">
+                                   <dt>Telefone:</dt>
+                                   <dd><a href="tel:#"> (47) 98431-5531</a> <span>/</span> <a href="tel:#">3227-1539</a>
+                                   </dd>
+                              </dl>
+                         </div>
+
+                         <div class="col-md-4 px-4">
+                              <h5> Área de Atuação</h5>
+                              <ul>
+                                   <li>Coaching;</li>
+                                   <li>Recrutamento &amp; Seleção especializado;</li>
+                                   <li>Assessment ;</li>
+                                   <li>Recolocação profissional/outplacement;</li>
+                                   <li>Consultoria nos subsistemas de RH.</li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </body>
+     <script type="application/javascript" src="js/jquery.min.js"></script>
+     <script type="application/javascript" src="js/bootstrap.min.js"></script>
+     <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+               'use strict';
+               window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                         form.addEventListener('submit', function(event) {
+                              if (form.checkValidity() === false) {
+                                   event.preventDefault();
+                                   event.stopPropagation();
+                              }
+                              form.classList.add('was-validated');
+                         }, false);
+                    });
+               }, false);
+          })();
+     </script> 
+</html>
